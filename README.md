@@ -1,6 +1,6 @@
 # Phase-end-project-1-Client-Meeting-System-
 
-This project was generated with [Link Text]Angular CLI version 10.2.1.
+This project was generated with -[Angular CLI](https://angular.io/cli) version 10.2.1.
 
 ## Development-server
 
@@ -14,4 +14,10 @@ Make sure you have the following installed:
 -[Angular CLI](https://angular.io/cli)
 
 ## Code scaffolding
+##### creating a new angular project #####
+ng new client-meeting-system
+##### creating the components #####
+ng generate component client-list|client-form|client-update|meeting-list|meeting-form|meeting-update
+
+
 
