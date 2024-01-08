@@ -16,10 +16,13 @@ Make sure you have the following installed:
 
 ## Code scaffolding
 **creating a new angular project**
+
 ng new client-meeting-system
 **creating the components**
+
 ng generate component client-list|client-form|client-update|meeting-list|meeting-form|meeting-update
 **to start the local-host**
+
 npm start
 
 ## Running unit tests ##
