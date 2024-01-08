@@ -15,12 +15,15 @@ Make sure you have the following installed:
 -[Json-server](https://www.npmjs.com/package/json-server)
 
 ## Code scaffolding
+
 **creating a new angular project**
 
 ng new client-meeting-system
+
 **creating the components**
 
 ng generate component client-list|client-form|client-update|meeting-list|meeting-form|meeting-update
+
 **to start the local-host**
 
 npm start
@@ -30,6 +33,7 @@ npm start
 Run ng test to execute the unit tests
 
 ## Further help ##
+
 To get more help on the Angular CLI use ng help or go check out the -[Angular CLI](https://angular.io/cli) page.
 
 
