@@ -1,0 +1,19 @@
+.image{
+    width: 550px;
+    height: 500px;
+    margin: 70px;
+}
+
+.card{
+    top:60%;
+    left: 40%;
+    width: 500px;
+    padding: 35px 40px;
+    transform: translate(-50%,-50%);
+    border: 2px solid black;
+}
+
+h5{
+    width: 600px;
+    font-size: 30px;
+}

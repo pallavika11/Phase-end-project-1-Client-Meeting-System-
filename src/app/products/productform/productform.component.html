@@ -1,0 +1,111 @@
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <h1 style="color: azure;">Client Management System</h1>
+      <div>
+        <button class="btn btn-success" routerLink="/addclient">Add Client</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-success" routerLink="/productlist">Show Meeting Details</button>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-sm-5">
+          <div class="image">
+              <img src="https://cdn.easycalendar.com/assets/images/Round-robin.jpg" class="img-fluid">
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="card">
+              <h5> Add Meeting Schedule</h5>
+              <div class="row">
+                <form class="col-md-6" (ngSubmit)="onSubmit()">
+                    <div class="form-group" mb-1>
+                        <label>Meeting Id</label>
+                        <input type="number" class="form-control" placeholder="Enter Id"
+                        [(ngModel)]="meeting.id" name="id"/>
+                    </div>
+                  <div class="form-group" mb-1>
+                      <label>Meeting Topic</label>
+                      <input type="text" class="form-control" placeholder="Enter meeting topic"
+                      [(ngModel)]="meeting.meetingtopic" name="meetingtopic"/>
+                  </div>
+                  <div class="form-group" mb-1>
+                      <label>No of People</label>
+                      <input type="number" class="form-control" placeholder="Enter no ofpeople"
+                      [(ngModel)]="meeting.noofpeople" name="noofpeople"/>
+                  </div>
+                  <div class="form-group" mb-1>
+                    <label>Start Date and Time</label>
+                    <input type="datetime-local" class="form-control" placeholder="Enter Start time"
+                    [(ngModel)]="meeting.starttime" name="starttime"/>
+                </div>
+                 
+                <div class="text-left mt-3">
+                    <button type="submit" class="btn btn-primary">Submit</button>&nbsp;
+                    <button type="submit" class="btn btn-secondary" routerLink="/clientlist">Back</button>
+                </div>
+              </form>
+
+              </div>
+  
+
+
+
+              <!-- <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="image">
+                            <img src="https://cdn.easycalendar.com/assets/images/Round-robin.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <h5> Add Meeting Schedule</h5>
+                            <div class="row">
+                                <form (ngSubmit)="onSubmit()">
+                                    <div class="form-group" mb-1>
+                                        <label>Id</label>
+                                        <input type="number" class="form-control" 
+                                            placeholder="Enter Meeting Id" [(ngModel)]="meeting.id" name="id" disabled/>
+                                    </div>
+                                    <div class="form-group" mb-1>
+                                        <label >Meeting Topic</label>
+                                        <input type="text" class="form-control" 
+                                            placeholder="Enter Meeting Topic" [(ngModel)]="meeting.meetingtopic" name="meetingtopic">
+                                    </div>
+                                    <div *ngIf="meetingtopic.invalid && meetingtopic.touched" class="text-danger">
+                                        Meetingtopic is required
+                                    </div> -->
+                                    <!-- <div class="form-group" mb-1>
+                                        <label >Number of People</label>
+                                        <input type="number" class="form-control" 
+                                            placeholder="Enter Number of People" [(ngModel)]="meeting.noofpeople" name="noofpeople">
+                                    </div> -->
+                                    <!-- <div *ngIf="noofpeople.invalid && noofpeople.touched" class="text-danger">
+                                       NoOfPeople is required
+                                    </div> -->
+                                    <!-- <div class="form-group" mb-1>
+                                        <label>Start Time</label>
+                                        <input type="datetime-local" class="form-control" 
+                                         placeholder="Enter Start-time" [(ngModel)]="meeting.starttime" name="starttime"> -->
+                                    
+                                    <!-- <div *ngIf="starttime.invalid &&starttime.touched" class="text-danger">
+                                        Start-time is required
+                                    </div> -->
+                                    <!-- <div class="text-left mt-3">
+                                        <button type="submit" class="btn btn-primary">Submit</button>&nbsp;
+                                        <button type="submit" class="btn btn-secondary" routerLink="/clientlist">Back</button>
+                                    </div>
+                                </form>
+            
+                            </div>
+            
+                        </div>
+            
+                    </div>
+            
+            
+                </div>
+            </div> --> 

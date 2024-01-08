@@ -1,0 +1,51 @@
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <h1 style="color: azure;">Client Management System</h1>
+      <div>
+        <button class="btn btn-success" routerLink="/addclient">Add Client</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-success" routerLink="/productform">Add Meeting Schedule</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-success" routerLink="/productlist">Show Meeting Details</button>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="image">
+          <img src="https://cdn-icons-png.flaticon.com/512/6034/6034928.png" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <table class="table table-striped table-dark mt-5">
+          <thead>
+            <tr>
+  
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone Number</th>
+              <th scope="col">Address</th>
+              <th scope="col">Action</th>
+  
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of data">
+              <td>{{item.firstname}}</td>
+              <td>{{item.lastname}}</td>
+              <td>{{item.email}}</td>
+              <td>{{item.phonenumber}}</td>
+              <td>{{item.address}}</td>
+              <td>
+                <i style="color: blue;" routerLink="/updateclient/{{item.id}}" class="fas fa-edit"></i>&nbsp;
+                <i style="color: red;" (click)="delete(item)" class="fas fa-trash"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
